@@ -14,7 +14,7 @@ export default [
     {
         firstName:'Peter',
         lastName:'Parker',
-        phone:'555-167-',
+        phone:'555-167-4567',
         email: 'spidy@google.com'
     }
 ];
