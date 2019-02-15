@@ -1,11 +1,19 @@
 import React from 'react';
 import './scrapbook.css';
-import puppy1 from './images/puppy1.jpeg';
+import ImageData from './image_data';
+import ScrapbookImage from './scrapbook_images';
 
 function Scrapbook(){
+
+    const images = ImageData.map((item,index)=>{
+            return (
+                <ScrapbookImage key={index} about={item}/>
+            )
+    });
+
     return(
         <div className="scrapbook-container">
-            <img src={puppy1} />
+            {images}
         </div>
     )
 }
